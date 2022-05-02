@@ -1,9 +1,10 @@
 import React from "react";
+
 function Nav() {
   return (
     <nav className="navbar">
       <div className="portfolio-title">
-        <h1>Liz Dieterich</h1>
+        <h1>LIZ DIETERICH</h1>
       </div>
       <div className="nav-links">
         <ul>
