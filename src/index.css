@@ -77,6 +77,17 @@ nav h1 {
   margin-bottom: 30px;
 }
 
+/* Styles to Contact */
+.contactFormHeader {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.formName,
+.formEmail {
+  width: 35%;
+}
+
 /* Styles to Footer */
 footer {
   background-color: #252424;
@@ -94,5 +105,17 @@ footer p {
 @media screen and (max-width: 991px) {
   .aboutSmallText {
     font-size: 12px;
+  }
+  .formName,
+  .formEmail {
+    width: 55%;
+  }
+}
+
+/* MEDIA QUERY FOR 740px */
+@media screen and (max-width: 740px) {
+  .formName,
+  .formEmail {
+    width: 85%;
   }
 }
