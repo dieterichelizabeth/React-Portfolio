@@ -31,6 +31,13 @@ section {
   margin: 80px 0px 80px;
 }
 
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 17px;
+  font-family: monospace;
+}
+
 /* Styles to Nav */
 .navbar {
   display: flex;
@@ -72,9 +79,26 @@ nav h1 {
   text-decoration: underline;
 }
 
+.navActive {
+  color: pink;
+}
+
 /* Styles to About */
 .aboutHeader {
   margin-bottom: 30px;
+}
+
+/* Begin styles to Porjects */
+.projectsSection {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  margin-bottom: 0px;
+}
+
+.projectTitle {
+  margin: 30px 0px 30px;
+  text-align: center;
+  font-weight: bolder;
 }
 
 /* Styles to Contact */
