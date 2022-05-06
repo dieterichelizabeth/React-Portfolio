@@ -85,7 +85,7 @@ nav h1 {
 
 /* Styles to About */
 .aboutHeader {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* Begin styles to Porjects */
@@ -99,6 +99,10 @@ nav h1 {
   margin: 30px 0px 30px;
   text-align: center;
   font-weight: bolder;
+}
+
+.projectCard {
+  margin-top: 100px;
 }
 
 /* Styles to Contact */

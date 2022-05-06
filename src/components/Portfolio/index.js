@@ -1,18 +1,18 @@
 import React from "react";
-// import Projects from "../Projects";
+import Projects from "../Projects";
 
 function Portfolio() {
   const categories = [
+    { name: "All", size: "3" },
     { name: "React.js", size: "4" },
     { name: "MongoDB", size: "4" },
-    { name: "Node.js", size: "3" },
+    { name: "Node.js", size: "4" },
     { name: "Express.js", size: "4" },
     { name: "MySQL", size: "3" },
-    { name: "JavaScript", size: "4" },
   ];
 
-  const handleClick = () => {
-    console.log("click handled");
+  const categoryClickHandler = (name) => {
+    console.log("Category selected: " + name);
   };
 
   return (
@@ -24,11 +24,11 @@ function Portfolio() {
             <button
               type="button"
               key={category.name}
-              className="btn btn-light col-4 m-1"
+              className={`btn btn-light col-${category.size} m-1`}
             >
               <span
                 onClick={() => {
-                  handleClick();
+                  categoryClickHandler(category.name);
                 }}
               >
                 {category.name}
@@ -36,6 +36,8 @@ function Portfolio() {
             </button>
           ))}
         </div>
+
+        <Projects />
       </section>
     </div>
   );
