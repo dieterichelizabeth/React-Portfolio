@@ -48,7 +48,10 @@ function Projects() {
   return (
     <div className="col-12 d-flex flex-wrap justify-content-center ">
       {projectList.map((project) => (
-        <div className="col-lg-4 col-md-6 col-sm-10 d-flex flex-wrap content projectCard">
+        <div
+          className="col-lg-4 col-md-6 col-sm-10 d-flex flex-wrap content projectCard"
+          key={project.name}
+        >
           <img
             src={require(`../../assets/small/${project.image}.png`)}
             alt=""
