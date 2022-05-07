@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Main from "../Main";
 
 function Header() {
-  // Set the current page as the value of "state"
+  // Set "About" as the value of the currentPage variable
   const [currentPage, SetCurrentPate] = useState("About");
 
   // Nav Links

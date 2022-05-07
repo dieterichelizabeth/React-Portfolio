@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Projects from "../Projects";
 
 function Portfolio() {
+  // Sets "All" as the value of the currentCategory variable
   const [currentCategory, SetCurrentCategory] = useState("All");
 
+  // Category Button Values
   const categories = [
     { name: "All", size: "3" },
     { name: "React.js", size: "4" },
