@@ -1,6 +1,11 @@
 import React from "react";
 
-function Projects() {
+function Projects(currentCategory) {
+  // Set CurrentCategory to Let variable
+
+  // Create function to filter all categories in projectList language
+  // Call function in map?
+
   const projectList = [
     {
       name: `Weathering With API's`,
@@ -45,6 +50,7 @@ function Projects() {
       image: "notesDelivery",
     },
   ];
+
   return (
     <div className="col-12 d-flex flex-wrap justify-content-center ">
       {projectList.map((project) => (

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Projects from "../Projects";
 
 function Portfolio() {
+  const [currentCategory, SetCurrentCategory] = useState("All");
+
   const categories = [
     { name: "All", size: "3" },
     { name: "React.js", size: "4" },
@@ -11,9 +13,7 @@ function Portfolio() {
     { name: "MySQL", size: "3" },
   ];
 
-  const categoryClickHandler = (name) => {
-    console.log("Category selected: " + name);
-  };
+  const categoryHandler = (name) => SetCurrentCategory(name);
 
   return (
     <div>
@@ -24,11 +24,15 @@ function Portfolio() {
             <button
               type="button"
               key={category.name}
-              className={`btn btn-light col-${category.size} m-1`}
+              className={`btn col-${category.size} m-1 ${
+                currentCategory === category.name
+                  ? "btn-light"
+                  : "btn-secondary"
+              }`}
             >
               <span
                 onClick={() => {
-                  categoryClickHandler(category.name);
+                  categoryHandler(category.name);
                 }}
               >
                 {category.name}
@@ -37,7 +41,7 @@ function Portfolio() {
           ))}
         </div>
 
-        <Projects />
+        <Projects currentCategory={currentCategory} />
       </section>
     </div>
   );
