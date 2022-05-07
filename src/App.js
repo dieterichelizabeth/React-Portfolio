@@ -9,7 +9,7 @@ function App() {
 
   // Nav Links
   const navLinks = [
-    { name: "Projects", href: "#projects" },
+    { name: "Portfolio", href: "#portfolio" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
     { name: "Resume", href: "#resume" },
@@ -44,7 +44,7 @@ function App() {
         </div>
       </nav>
 
-      <Main />
+      <Main currentPage={currentPage} />
 
       <Footer />
     </div>
@@ -56,5 +56,5 @@ export default App;
 // Define the nav bar links - Done
 // Map to display navbar - Done
 // Add event listener/click handler change - Done
-// Pass the variable to the "Main component" for condintional rendering
-// Add conditional styling
+// Pass the variable to the "Main component" for condintional rendering - Done
+// Add conditional styling - Done
