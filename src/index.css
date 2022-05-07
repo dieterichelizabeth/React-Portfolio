@@ -72,11 +72,14 @@ nav h1 {
   display: block;
   text-decoration: none;
   padding: 16px;
-  color: #252424ff;
 }
 
 .nav-links li:hover {
   text-decoration: underline;
+}
+
+.navInactive {
+  color: #252424ff;
 }
 
 .navActive {
