@@ -115,14 +115,15 @@ nav h1 {
 }
 
 .formName,
-.formEmail {
+.formEmail,
+.formMessage {
   width: 35%;
 }
 
 /* Styles to Footer */
 footer {
-  background-color: #252424;
-  color: #ebedf088;
+  background-color: #f2f3f5;
+  color: #252424;
   text-align: center;
 }
 

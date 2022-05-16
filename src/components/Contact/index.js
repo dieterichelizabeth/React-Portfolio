@@ -1,10 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact() {
+  // Form variables/state
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errorMessage, setErrorMessage] = useState("");
+  const { name, email, message } = formState;
+
+  // Handles submit event
+  const sumbitHandler = (event) => {
+    event.preventDefault();
+    if (!errorMessage) {
+      alert("Thank you for your submission");
+      console.log("Submit Form", formState);
+    }
+  };
+
+  // Handles user leaving form field
+  const onLeave = (event) => {
+    if (event.target.id === "email") {
+      const isValid = validateEmail(event.target.value);
+      if (!isValid) {
+        setErrorMessage("Your email is invalid.");
+      } else {
+        setErrorMessage("");
+      }
+    } else {
+      if (!event.target.value.length) {
+        setErrorMessage(`Your ${event.target.id} is required.`);
+      } else {
+        setErrorMessage("");
+      }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [event.target.id]: event.target.value });
+      console.log("Handle Form", formState);
+    }
+  };
+
+  // Regex taken from Module 17- matches an email.
+  const validateEmail = (email) => {
+    var regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+    return regex.test(String(email).toLowerCase());
+  };
+
   return (
     <section className="col-12 content">
       <div className="col-12">
-        <h2>Contact</h2>
+        <h2>Contact Information</h2>
         <p>
           Thank you for viewing my portfolio! <br />
           If you have any questions please reach out, my inbox is always open.
@@ -21,8 +68,8 @@ function Contact() {
         </p>
       </div>
       <div className="col-12">
-        <h3 className="contactFormHeader">Say Hello</h3>
-        <form action="contact">
+        <h3 className="contactFormHeader">Reach Out</h3>
+        <form action="contact" onSubmit={sumbitHandler}>
           <label htmlFor="name">Name:</label>
           <br />
           <input
@@ -30,6 +77,8 @@ function Contact() {
             id="name"
             className="formName"
             placeholder="Your Name"
+            defaultValue={name}
+            onBlur={onLeave}
           />
           <br />
           <br />
@@ -40,9 +89,27 @@ function Contact() {
             id="email"
             className="formEmail"
             placeholder="Example@example.com"
+            defaultValue={email}
+            onBlur={onLeave}
           />
           <br />
           <br />
+          <label htmlFor="message">Message:</label>
+          <br />
+          <input
+            type="text"
+            id="message"
+            className="formMessage"
+            defaultValue={message}
+            onBlur={onLeave}
+          />
+          <br />
+          <br />
+          {errorMessage && (
+            <div>
+              <p>{errorMessage}</p>
+            </div>
+          )}
           <input
             type="submit"
             className="btn btn-outline-dark"

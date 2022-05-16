@@ -20,21 +20,21 @@ function Projects(currentCategory) {
       category: "MySQL Express",
       description:
         "Zoolander is a fun, relaxing Web Application where users can unwind by watching live animal cameras either during or after a long day. Users are able to create an account, leave a comment for the animals, and favorite videos so they appear in their dashboard.",
-      image: "notesDelivery",
+      image: "zoolander",
     },
     {
       name: "TechBlog Bebop",
       category: "MySQL Express",
       description:
         "TechBlog Bebop is a CMS-style blog where developers can publish their blog posts and comment on other developers' posts as well. Users can create an account to share article links, blog posts, their thoughts and opinions.",
-      image: "notesDelivery",
+      image: "techBlog",
     },
     {
       name: "Budget Tracker",
       category: "MondoDB",
       description:
         "Budget Tracker gives users the ability to track their budget (Expenses and Deposits) on vacation- with, or without an internet connection. So if users travel to an area with spotty service, they will be able to continue to track their funds.",
-      image: "notesDelivery",
+      image: "budgetTracker",
     },
     {
       name: "Notes Delivery Service",
@@ -48,7 +48,7 @@ function Projects(currentCategory) {
       category: "Javascript",
       description:
         "Workday timetable is simple calendar app that allows the user to save events for each hour of the day. The app keeps track of time by changing the colors of the taskbox as each hour passes.",
-      image: "notesDelivery",
+      image: "workdaySchedule",
     },
   ];
 
