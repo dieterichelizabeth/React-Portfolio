@@ -1,11 +1,6 @@
 import React from "react";
 
-function Projects(currentCategory) {
-  // Set CurrentCategory to Let variable
-
-  // Create function to filter all categories in projectList language
-  // Call function in map?
-
+function Projects() {
   // Project Information
   const projectList = [
     {

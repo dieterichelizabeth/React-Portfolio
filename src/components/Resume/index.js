@@ -11,7 +11,7 @@ function Resume() {
         Download PDF
       </a>
 
-      <div className="col-lg-9 col-md-10 justify-content-center my-4">
+      <div className="col-lg-6 col-md-10 justify-content-center my-4">
         <img src={require(`../../assets/contact/page1.png`)} alt="" />
         <img src={require(`../../assets/contact/page2.png`)} alt="" />
       </div>
