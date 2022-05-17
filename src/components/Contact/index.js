@@ -57,14 +57,15 @@ function Contact() {
           If you have any questions please reach out, my inbox is always open.
         </p>
         <p>
-          <i className="bi bi-linkedin"></i>
+          <i className="bi bi-linkedin mr-2"></i>
           https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/
           <br />
-          <i className="bi bi-github"></i> https://github.com/dieterichelizabeth
+          <i className="bi bi-github mr-2"></i>
+          https://github.com/dieterichelizabeth
           <br />
-          <i className="bi bi-envelope"></i> dieterichelizabeth@gmail.com
+          <i className="bi bi-envelope mr-2"></i>dieterichelizabeth@gmail.com
           <br />
-          <i className="bi bi-geo-alt"></i> Dallas, TX
+          <i className="bi bi-geo-alt mr-2"></i>Dallas, TX
         </p>
       </div>
       <div className="col-12">

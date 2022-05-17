@@ -11,7 +11,7 @@ function Projects() {
         "This project uses JavaScript to source weather data from the Open Weather Api, then dynamically display to the user. User's are able to search by city name in the search bar.",
       image: "weatherDashboard",
       githubLink: "https://github.com/dieterichelizabeth/weathering-with-apis",
-      deployed: "",
+      deployed: "https://weathering-with-apis.herokuapp.com/",
     },
     {
       name: "Zoolander",
@@ -41,7 +41,7 @@ function Projects() {
         "Budget Tracker gives users the ability to track their budget (Expenses and Deposits) on vacation; with or without an internet connection.",
       image: "budgetTracker",
       githubLink: "https://github.com/dieterichelizabeth/Budget-Tracker",
-      deployed: "",
+      deployed: "https://budget-tracker-applet.herokuapp.com/",
     },
     {
       name: "Notes Delivery Service",
@@ -85,7 +85,7 @@ function Projects() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i class="bi bi-github text-dark"></i>
+                <i class="bi bi-github text-dark ml-2"></i>
               </a>
             </span>
           </p>
