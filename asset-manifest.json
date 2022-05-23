@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.5f216c32.css",
-    "main.js": "/react-portfolio/static/js/main.b0c54993.js",
-    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/aboutImage.png": "/react-portfolio/static/media/aboutImage.365ee648d9b8e0ac7671.png",
-    "static/media/zoolander.png": "/react-portfolio/static/media/zoolander.a4aed5ba5455287827c4.png",
-    "static/media/techBlog.png": "/react-portfolio/static/media/techBlog.7d8731f148e049f6cc70.png",
-    "static/media/page1.png": "/react-portfolio/static/media/page1.5bee4d098bb0176f6fea.png",
-    "static/media/notesDelivery.png": "/react-portfolio/static/media/notesDelivery.1c81edf57ef542203e33.png",
-    "static/media/page2.png": "/react-portfolio/static/media/page2.93f717ecdaed9768e3c9.png",
-    "static/media/weatherDashboard.png": "/react-portfolio/static/media/weatherDashboard.0c889f9239486df3301f.png",
-    "static/media/budgetTracker.png": "/react-portfolio/static/media/budgetTracker.4b1535afb7370469455c.png",
-    "static/media/workdaySchedule.png": "/react-portfolio/static/media/workdaySchedule.f4bf206a62aa5fdd8766.png",
-    "index.html": "/react-portfolio/index.html",
-    "main.5f216c32.css.map": "/react-portfolio/static/css/main.5f216c32.css.map",
-    "main.b0c54993.js.map": "/react-portfolio/static/js/main.b0c54993.js.map",
-    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.css": "/React-Portfolio/static/css/main.5f216c32.css",
+    "main.js": "/React-Portfolio/static/js/main.ff393424.js",
+    "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/aboutImage.png": "/React-Portfolio/static/media/aboutImage.365ee648d9b8e0ac7671.png",
+    "static/media/zoolander.png": "/React-Portfolio/static/media/zoolander.a4aed5ba5455287827c4.png",
+    "static/media/techBlog.png": "/React-Portfolio/static/media/techBlog.7d8731f148e049f6cc70.png",
+    "static/media/page1.png": "/React-Portfolio/static/media/page1.5bee4d098bb0176f6fea.png",
+    "static/media/notesDelivery.png": "/React-Portfolio/static/media/notesDelivery.1c81edf57ef542203e33.png",
+    "static/media/page2.png": "/React-Portfolio/static/media/page2.93f717ecdaed9768e3c9.png",
+    "static/media/weatherDashboard.png": "/React-Portfolio/static/media/weatherDashboard.0c889f9239486df3301f.png",
+    "static/media/budgetTracker.png": "/React-Portfolio/static/media/budgetTracker.4b1535afb7370469455c.png",
+    "static/media/workdaySchedule.png": "/React-Portfolio/static/media/workdaySchedule.f4bf206a62aa5fdd8766.png",
+    "index.html": "/React-Portfolio/index.html",
+    "main.5f216c32.css.map": "/React-Portfolio/static/css/main.5f216c32.css.map",
+    "main.ff393424.js.map": "/React-Portfolio/static/js/main.ff393424.js.map",
+    "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f216c32.css",
-    "static/js/main.b0c54993.js"
+    "static/js/main.ff393424.js"
   ]
 }
