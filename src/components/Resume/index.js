@@ -4,7 +4,7 @@ function Resume() {
   return (
     <div className="d-flex flex-wrap justify-content-center">
       <a
-        href="../../assets/resume/resume.pdf"
+        href={require("../../assets/resume/resume.pdf")}
         download="Dieterich-Elizabeth-Resume"
         className="col-12 text-center"
       >
