@@ -4,16 +4,6 @@ function Projects() {
   // Project Information
   const projectList = [
     {
-      name: `Weathering With API's`,
-      category: "JavaScript",
-      languages: "HTML, CSS, JavaScript",
-      description:
-        "This project uses JavaScript to source weather data from the Open Weather Api, then dynamically display to the user. User's are able to search by city name in the search bar.",
-      image: "weatherDashboard",
-      githubLink: "https://github.com/dieterichelizabeth/weathering-with-apis",
-      deployed: "https://weathering-with-apis.herokuapp.com/",
-    },
-    {
       name: "Zoolander",
       category: "MySQL Express",
       languages: "JavaScript, Handlebars, Swiper.js, MySQL, Sequelize",
@@ -22,6 +12,16 @@ function Projects() {
       image: "zoolander",
       githubLink: "https://github.com/JFlo1981/Virtual-Zoo",
       deployed: "https://virtual-zoo-1234.herokuapp.com/",
+    },
+    {
+      name: "Food Truck Finder",
+      category: "React",
+      languages: "React, Chakra UI, GraphQl, Apollo-Express, MongoDb, Node.js",
+      description:
+        "Food Truck Finder is a full-stack MERN app that uses the Google Maps and Yelp APIs to let you search for a Food Truck and returns results of Food Trucks in the area searched.",
+      image: "FoodTruckFinder",
+      githubLink: "https://github.com/JFlo1981/FoodTruckFinder",
+      deployed: "https://stark-garden-14782.herokuapp.com/",
     },
     {
       name: "TechBlog Bebop",
@@ -44,15 +44,14 @@ function Projects() {
       deployed: "https://budget-tracker-applet.herokuapp.com/",
     },
     {
-      name: "Notes Delivery Service",
-      category: "Express",
-      languages: "Node.js, Sequelize, Express.js",
+      name: `Weathering With API's`,
+      category: "JavaScript",
+      languages: "HTML, CSS, JavaScript",
       description:
-        "Note Taker is an application that can be used to write and save notes. A user can open the application, and click on the link to the notes page.",
-      image: "notesDelivery",
-      githubLink:
-        "https://github.com/dieterichelizabeth/notes-delivery-service",
-      deployed: "https://nameless-spire-63081.herokuapp.com/",
+        "This project uses JavaScript to source weather data from the Open Weather Api, then dynamically display to the user. User's are able to search by city name in the search bar.",
+      image: "weatherDashboard",
+      githubLink: "https://github.com/dieterichelizabeth/weathering-with-apis",
+      deployed: "https://weathering-with-apis.herokuapp.com/",
     },
     {
       name: "Workday Scheduler",
