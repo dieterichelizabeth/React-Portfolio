@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.5f216c32.css",
-    "main.js": "/React-Portfolio/static/js/main.1d5bdd39.js",
+    "main.js": "/React-Portfolio/static/js/main.97a0d507.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/FoodTruckFinder.png": "/React-Portfolio/static/media/FoodTruckFinder.bfd0fd738d803e2f4489.png",
     "static/media/aboutImage.png": "/React-Portfolio/static/media/aboutImage.365ee648d9b8e0ac7671.png",
     "static/media/zoolander.png": "/React-Portfolio/static/media/zoolander.a4aed5ba5455287827c4.png",
     "static/media/techBlog.png": "/React-Portfolio/static/media/techBlog.7d8731f148e049f6cc70.png",
@@ -15,11 +16,11 @@
     "static/media/resume.pdf": "/React-Portfolio/static/media/resume.8b9e4427272e45229a7b.pdf",
     "index.html": "/React-Portfolio/index.html",
     "main.5f216c32.css.map": "/React-Portfolio/static/css/main.5f216c32.css.map",
-    "main.1d5bdd39.js.map": "/React-Portfolio/static/js/main.1d5bdd39.js.map",
+    "main.97a0d507.js.map": "/React-Portfolio/static/js/main.97a0d507.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f216c32.css",
-    "static/js/main.1d5bdd39.js"
+    "static/js/main.97a0d507.js"
   ]
 }
