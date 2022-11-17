@@ -1,4 +1,4 @@
-# My React Portfolio
+# My React Portfolio version 1
 
 Click to view the [deployed application](https://dieterichelizabeth.github.io/React-Portfolio/)
 
