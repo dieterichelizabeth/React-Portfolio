@@ -48,9 +48,59 @@ function Contact() {
     return regex.test(String(email).toLowerCase());
   };
 
+  const contactForm = (
+    <div className="col-12">
+      <h3 className="contactFormHeader">Reach Out</h3>
+      <form action="contact" onSubmit={sumbitHandler}>
+        <label htmlFor="name">Name:</label>
+        <br />
+        <input
+          type="text"
+          id="name"
+          className="formName"
+          placeholder="Your Name"
+          defaultValue={name}
+          onBlur={onLeave}
+        />
+        <br />
+        <br />
+        <label htmlFor="email">Email:</label>
+        <br />
+        <input
+          type="text"
+          id="email"
+          className="formEmail"
+          placeholder="Example@example.com"
+          defaultValue={email}
+          onBlur={onLeave}
+        />
+        <br />
+        <br />
+        <label htmlFor="message">Message:</label>
+        <br />
+        <input
+          type="text"
+          id="message"
+          className="formMessage"
+          defaultValue={message}
+          onBlur={onLeave}
+        />
+        <br />
+        <br />
+        {errorMessage && (
+          <div>
+            <p>{errorMessage}</p>
+          </div>
+        )}
+        <input type="submit" className="btn btn-outline-dark" value="Submit" />
+      </form>
+    </div>
+  );
+
   return (
-    <section className="col-12 content">
-      <div className="col-12">
+    <section className="col-12 project-animation">
+      {/* <div className="col-12 contact-card"> </div> */}
+      <div className="contact-card-content">
         <h2>Contact Information</h2>
         <p>
           Thank you for viewing my portfolio! <br />
@@ -67,56 +117,6 @@ function Contact() {
           <br />
           <i className="bi bi-geo-alt mr-2"></i>Dallas, TX
         </p>
-      </div>
-      <div className="col-12">
-        <h3 className="contactFormHeader">Reach Out</h3>
-        <form action="contact" onSubmit={sumbitHandler}>
-          <label htmlFor="name">Name:</label>
-          <br />
-          <input
-            type="text"
-            id="name"
-            className="formName"
-            placeholder="Your Name"
-            defaultValue={name}
-            onBlur={onLeave}
-          />
-          <br />
-          <br />
-          <label htmlFor="email">Email:</label>
-          <br />
-          <input
-            type="text"
-            id="email"
-            className="formEmail"
-            placeholder="Example@example.com"
-            defaultValue={email}
-            onBlur={onLeave}
-          />
-          <br />
-          <br />
-          <label htmlFor="message">Message:</label>
-          <br />
-          <input
-            type="text"
-            id="message"
-            className="formMessage"
-            defaultValue={message}
-            onBlur={onLeave}
-          />
-          <br />
-          <br />
-          {errorMessage && (
-            <div>
-              <p>{errorMessage}</p>
-            </div>
-          )}
-          <input
-            type="submit"
-            className="btn btn-outline-dark"
-            value="Submit"
-          />
-        </form>
       </div>
     </section>
   );

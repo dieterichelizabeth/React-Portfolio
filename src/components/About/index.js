@@ -3,10 +3,10 @@ import coverImage from "../../assets/about/aboutImage.png";
 
 function About() {
   return (
-    <section className="col-12 d-flex flex-wrap justify-content-center">
+    <section className="col-12 d-flex flex-wrap justify-content-center project-animation">
       <div className="col-lg-6 col-md-8 content">
         <h2 className="col-12 aboutHeader">About</h2>
-        <p className="col-10">
+        <p className="col-10 ">
           I am a Full stack web developer leveraging anthropology background to
           create practical, robust applications. Currently styding Full Stack
           Web Development from the University of Texas Austin Coding Bootcamp,
