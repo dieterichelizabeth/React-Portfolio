@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 import "./App.css";
 
 function App() {
   // Page State
   const [currentPage, SetCurrentPate] = useState("Home");
+  const navHandler = (name) => SetCurrentPate(name);
 
   // Nav Links
   const navLinks = [
@@ -15,12 +18,40 @@ function App() {
     { name: "Resume", href: "#resume" },
   ];
 
-  const navHandler = (name) => SetCurrentPate(name);
+  // Conditionally Render pages
+  const activePage = () => {
+    if (currentPage === "Home") {
+      return homepage;
+    } else if (currentPage === "Portfolio") {
+      return <Portfolio />;
+    } else if (currentPage === "About") {
+      return <About />;
+    } else if (currentPage === "Resume") {
+      return <Resume />;
+    } else {
+      return <Contact />;
+    }
+  };
+
+  const homepage = (
+    <section className="home--page">
+      <h1>Hello, I'm Liz.</h1>
+      <p>I'm a developer who loves building things for the web.</p>
+      <button
+        onClick={() => {
+          navHandler("Portfolio");
+        }}
+        className="btn--clear"
+      >
+        View Projects
+      </button>
+    </section>
+  );
 
   return (
     <>
       <header>
-        <nav className="navbar">
+        <nav>
           <a
             href={"/"}
             onClick={() => {
@@ -28,10 +59,10 @@ function App() {
             }}
             className="portfolio-title"
           >
-            Liz Dieterich
+            Elizabeth Dieterich
           </a>
 
-          <ul className="nav-links">
+          <ul>
             {navLinks.map((link) => (
               <li key={link.name}>
                 <a
@@ -50,10 +81,8 @@ function App() {
           </ul>
         </nav>
       </header>
-
-      <Main currentPage={currentPage} />
-
-      <Footer />
+      {/* Render the Page */}
+      {activePage()}
     </>
   );
 }
