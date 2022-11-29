@@ -7,8 +7,8 @@ import "./App.css";
 
 function App() {
   // Page State
-  const [currentPage, SetCurrentPate] = useState("Home");
-  const navHandler = (name) => SetCurrentPate(name);
+  const [currentPage, SetCurrentPage] = useState("About");
+  const navHandler = (name) => SetCurrentPage(name);
 
   // Nav Links
   const navLinks = [
@@ -20,9 +20,7 @@ function App() {
 
   // Conditionally Render pages
   const activePage = () => {
-    if (currentPage === "Home") {
-      return homepage;
-    } else if (currentPage === "Portfolio") {
+    if (currentPage === "Portfolio") {
       return <Portfolio />;
     } else if (currentPage === "About") {
       return <About />;
@@ -32,21 +30,6 @@ function App() {
       return <Contact />;
     }
   };
-
-  const homepage = (
-    <section className="home--page">
-      <h1>Hello, I'm Liz.</h1>
-      <p>I'm a developer who loves building things for the web.</p>
-      <button
-        onClick={() => {
-          navHandler("Portfolio");
-        }}
-        className="btn--clear"
-      >
-        View Projects
-      </button>
-    </section>
-  );
 
   return (
     <>
@@ -81,6 +64,7 @@ function App() {
           </ul>
         </nav>
       </header>
+
       {/* Render the Page */}
       {activePage()}
     </>
