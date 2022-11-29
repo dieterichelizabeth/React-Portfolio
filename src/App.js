@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import "./App.css";
@@ -8,15 +9,6 @@ import "./App.css";
 function App() {
   // Page State
   const [currentPage, SetCurrentPage] = useState("About");
-  const navHandler = (name) => SetCurrentPage(name);
-
-  // Nav Links
-  const navLinks = [
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
-    { name: "Resume", href: "#resume" },
-  ];
 
   // Conditionally Render pages
   const activePage = () => {
@@ -34,39 +26,11 @@ function App() {
   return (
     <>
       <header>
-        <nav>
-          <a
-            href={"/"}
-            onClick={() => {
-              navHandler("Home");
-            }}
-            className="portfolio-title"
-          >
-            Elizabeth Dieterich
-          </a>
-
-          <ul>
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a
-                  href={link.href}
-                  onClick={() => {
-                    navHandler(link.name);
-                  }}
-                  className={
-                    currentPage === link.name ? "navActive" : "navInactive"
-                  }
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <Nav currentPage={currentPage} SetCurrentPage={SetCurrentPage} />
       </header>
 
       {/* Render the Page */}
-      {activePage()}
+      <main>{activePage()}</main>
     </>
   );
 }

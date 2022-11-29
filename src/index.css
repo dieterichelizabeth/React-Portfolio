@@ -19,7 +19,8 @@ body {
 
 a:hover {
   color: var(--color-dark);
-  text-decoration: underline;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 h1 {
@@ -88,6 +89,12 @@ nav {
   width: 100vw;
 }
 
+nav img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
 .navInactive {
   color: var(--color-dark);
 }
@@ -103,7 +110,7 @@ nav {
 }
 
 /* Styles to Home Page */
-.home--page {
+/* .home--page {
   background-image: url("./assets/images/homepage.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +118,7 @@ nav {
   height: 100vh;
   padding-top: 200px;
   padding-left: 100px;
-}
+} */
 
 .btn--clear {
   background-color: #f7f7f742;
